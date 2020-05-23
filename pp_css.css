@@ -1,0 +1,67 @@
+html {
+    background-color: salmon;
+    font-family: Arial;
+}
+
+#header-img {
+    height: 75x;
+    width: 75px;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
+
+header {
+    border-style: dashed;
+    border-color: black;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #efe7bc;
+
+}
+
+#form {
+    margin-top: 200px;
+}
+
+h1 {
+    color: black;
+}
+
+form {
+    border-color: black;
+    border-style: dotted;
+}
+
+#nav-bar {
+    background-color: aquamarine;
+    padding: 10px;
+
+}
+
+#main-picture {
+    height: 500px;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    border-color: black;
+    border-style: dashed;
+}
+
+.flex-container > div {
+    background-color:#f1f1f1;
+    width: 100px;
+    margin: 10px;
+}
