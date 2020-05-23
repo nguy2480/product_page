@@ -1,0 +1,64 @@
+
+
+<html>
+
+    <style>
+        html{
+            background-color: grey;
+        }
+
+        @media (max-width: 500px){
+            html {
+                background-color: blueviolet;
+            }
+        }
+
+        .list{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #header-img {
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+
+    <body>
+        <header id="header">
+            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" alt="Company logo">
+            <nav id="nav-bar">
+                <ul class="list">
+                    <li ><a class="nav-link" href="#features">Features</a></li>
+                    <li ><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li ><a class="nav-link" href="#howitworks">How it works</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <h2 id="features">Features</h2>
+            <h2 id="pricing">Pricing</h2>
+            <h2 id ="howitworks">How it works</h2>
+        </div>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label for="email">Enter your email to find out details:</label>
+            <br>
+            <input id="email" type="email"  name="email" placeholder="Eg.12345@gmail.com">
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+
+        <video id="video" width="400" height="400" controls>
+            <source src="videoplayback" type="video/mp4">
+        </video>
+
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    </body>
+
+</html>
+
