@@ -5,6 +5,19 @@
     <style>
         html{
             background-color: grey;
+            border-style: dashed;
+            border-color: black;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: salmon;
+        }
+
+        form {
+            margin-top: 300px;
         }
 
         @media (max-width: 500px){
@@ -25,9 +38,22 @@
 
     </style>
 
+    <head>
+        <title>LevelUp: Premium high school tutoring</title>
+    </head>
+
     <body>
         <header id="header">
-            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" alt="Company logo">
+            <div class="logo">
+                <img 
+                    id="header-img" 
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" 
+                    alt="Company logo"
+                />
+            </div>
+
+            <h1>LevelUp: Premium high school tutoring</h1>
+
             <nav id="nav-bar">
                 <ul class="list">
                     <li ><a class="nav-link" href="#features">Features</a></li>
@@ -37,28 +63,56 @@
             </nav>
         </header>
 
+        <section id="enter-email">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Enter your email to find out details:</label>
+            <br>
+            <input 
+                id="email" 
+                type="email"  
+                name="email" 
+                placeholder="Eg.12345@gmail.com"
+            />
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        </section>
+
+        <section id="value">
+            <h2> Top service </h2>
+                <p>Undivided attention from top scholar</p>
+            <h2> Multiple subjects</h2>
+                <p>Can tutor Math, English and Science</p>
+            <h2> 100% money back guarantee</h2>
+                <p>Try it and if you're not impressed, full refund no questions asked</p>
+        </section>
+
+        <video 
+            id="video" 
+            width="400" 
+            height="400" 
+            controls
+        >
+            <source src="videoplayback" type="video/mp4">
+        </video>
+
         <div>
             <h2 id="features">Features</h2>
             <h2 id="pricing">Pricing</h2>
             <h2 id ="howitworks">How it works</h2>
         </div>
 
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-            <label for="email">Enter your email to find out details:</label>
-            <br>
-            <input id="email" type="email"  name="email" placeholder="Eg.12345@gmail.com">
-            <br>
-            <input id="submit" type="submit" value="Submit">
-        </form>
-
-        <video id="video" width="400" height="400" controls>
-            <source src="videoplayback" type="video/mp4">
-        </video>
-
-
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
     </body>
+
+    <footer>
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
 
 </html>
 
